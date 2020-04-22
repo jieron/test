@@ -62,7 +62,7 @@ $(document).ready(function() {
      setTimeout(function() {
       $.get("/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to="+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav, function(data) {
       if (data === 'done') {
-       $('<div><p class="me">'+tav+'</p></div>').appendTo(".conv#"+$(".ta").attr("id"));
+       $('<div class="me-div"><p class="me">'+tav+'</p></div>').appendTo(".conv#"+$(".ta").attr("id"));
        $(".conv#"+$(".ta").attr("id")).scrollTop($(".conv#"+$(".ta").attr("id")).height());
       }
       else if (data === 'out')
