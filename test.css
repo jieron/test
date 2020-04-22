@@ -166,14 +166,13 @@ body {
 }
 
 .tab {
-    margin: 0;
+    margin: 1px;
     border-bottom: 1px solid #494949;
     background: rgb(103, 158, 90);
     position: relative;
-    font-size: 1.5rem;
     font-weight: bold;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 5px;
+    border-radius: 10px;
     padding-left: 25px;
 }
 
@@ -195,7 +194,9 @@ body {
 }
 
 .conv {
-    background: url('https://i.pinimg.com/236x/8f/ba/cb/8fbacbd464e996966eb9d4a6b7a9c21e--sultan.jpg');
+    background: url('https://qph.fs.quoracdn.net/main-qimg-8b585fb4a5c9fedbb899cfb0cf0331a7');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     top: 85px;
     left: 0;
@@ -207,33 +208,40 @@ body {
     border-radius: 15px;
     overflow-y: auto
 }
-
+.conv div{
+    display: block;
+    margin: 3px auto;
+    width: 100%;
+}
 .conv p {
-    margin: 5px;
-    margin-left: 10px;
+    margin: 3px;
+    margin:0 10px;
     background: #e5e4e4;
     border-radius:0 10px 10px 0;
     padding: 7px;
     font-family: 'Segoe UI';
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
     display: inline-block;
-    border: 2px solid #3e6457;
+    border: 2px solid #3e6457;  
 }
 
 .conv p.me {
-    margin: 5px;
-    margin-right: 10px;
-    background: #e4f0b0;
+  
+    background: #a1f3f3;
     border-radius:10px 0 0  10px;
     padding: 7px;
     font-family: 'Segoe UI';
-    font-size: 1.2em;
-    font-weight: 500;
-    display: block;
     border: 2px solid #3e6457;
-float: right;}
+    
+}
 
+.conv div:nth-child(odd) {
+    text-align: right   ;
+  }
+  .conv div:nth-child(1) {
+    width: 45px   ;
+  }
 .clear {
     position: fixed;
     left: 5px;
@@ -261,7 +269,9 @@ float: right;}
 
 .foot div {
     display: table-cell;
-    width: 100%
+    width: 100% ;
+    background: #273a33;
+    border-radius: 22px;
 }
 
 .ta {
@@ -270,7 +280,7 @@ float: right;}
     width: 100%;
     margin: 0;
     height: 45px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
     border: none;
     direction: rtl;
