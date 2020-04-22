@@ -1,0 +1,292 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+    margin:5px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px ;
+    background: url('https://i.pinimg.com/236x/8f/ba/cb/8fbacbd464e996966eb9d4a6b7a9c21e--sultan.jpg');
+}
+
+.top {
+    background: #3e6457;
+    display: table;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    border-radius: 15px 15px 0 0;
+    border-collapse: collapse
+}
+
+.top p {
+    display: table-cell;
+    cursor: pointer;
+    border: 0px solid #eee
+}
+
+#his {
+    border-radius: 15px 0 0 0;
+    background: url('/template/ic.png') no-repeat 50% -27px
+}
+#his:hover , #onl:hover {
+    box-shadow: 0 0 3px 3px rgb(172, 207, 174);
+}
+#onl {
+    border-radius: 0 15px 0 0;
+    background: url('/template/ic.png') no-repeat 50% -69px
+}
+
+.header p:last-child {
+    border: none
+}
+
+.h1 {
+    display: table;
+    background: rgba(18, 170, 99, 0.664);
+    margin: 0px auto;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 0 0 12px 12px ;
+    font-family: 'Segoe UI';
+    width: 100%;
+    height: 45px ;
+}
+
+.h1 span {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.out {
+    display: none;
+    position: absolute;
+    top:90px;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+#on {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 2px;
+    right: 0;
+    overflow-y: auto
+}
+
+#on p {
+    border-bottom: 1px solid rgb(155, 236, 182);
+    font-family: Tahoma;
+    position: relative;
+    cursor: pointer;
+    height: 34px
+}
+
+.m {
+    width: 90%;
+    color: rgb(44, 112, 214);
+    background: rgb(44 ,112, 214,0.12547);
+    margin:0 auto 5px auto ;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.f {
+    width: 90%;
+    color: rgb(206, 55, 78);
+    margin:0 auto 5px auto  ;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: bold;
+    background: rgb(206, 55, 78,0.12547);
+}
+
+#on img {
+    position: absolute;
+    left: 5px;
+    margin-top: 5px
+}
+
+#on p b {
+    position: absolute;
+    right: 54px;
+    font-size: 16px;
+    font-weight: normal;
+    top: 5px
+}
+
+#on p span {
+    position: absolute;
+    right: 3px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    top: 4px
+}
+
+#on p i {
+    position: absolute;
+    right: 28px;
+    font-style: normal;
+    font-size: 10px;
+    margin: 0 3px;
+    top: 2px
+}
+
+#on u {
+    position: absolute;
+    bottom: 2px;
+    left: 4px;
+    text-decoration: none;
+    color: lightsteelblue;
+    font-size: 12px
+}
+
+#wel p {
+    text-align: center;
+    margin: 5px auto;
+    display: table;
+    padding: 2px 4px
+}
+
+.tab {
+    margin: 0;
+    border-bottom: 1px solid #494949;
+    background: rgb(103, 158, 90);
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    padding-left: 25px;
+}
+
+.tab i {
+    font: normal 18px 'Segoe UI';
+    color: #377ca8;
+    margin: 4px;
+    float: left;
+    margin: 4px;
+    position: absolute
+}
+
+.x {
+    background: url('/template/ic.png') no-repeat -5px -5px;
+    width: 25px;
+    height: 25px;
+    right: 5px;
+    position: absolute
+}
+
+.conv {
+    background: url('https://i.pinimg.com/236x/8f/ba/cb/8fbacbd464e996966eb9d4a6b7a9c21e--sultan.jpg');
+    position: absolute;
+    top: 85px;
+    left: 0;
+    bottom: 65px;
+    right: 0;
+    margin: 5px auto;
+    padding: 10px;
+    border: 5px solid rgb(18, 100, 80);
+    border-radius: 15px;
+    overflow-y: auto
+}
+
+.conv p {
+    margin: 5px;
+    margin-left: 10px;
+    background: #e5e4e4;
+    border-radius:0 10px 10px 0;
+    padding: 7px;
+    font-family: 'Segoe UI';
+    font-size: 1.2em;
+    font-weight: 500;
+    display: inline-block;
+    border: 2px solid #3e6457;
+}
+
+.conv p.me {
+    margin: 5px;
+    margin-right: 10px;
+    background: #e4f0b0;
+    border-radius:10px 0 0  10px;
+    padding: 7px;
+    font-family: 'Segoe UI';
+    font-size: 1.2em;
+    font-weight: 500;
+    display: block;
+    border: 2px solid #3e6457;
+float: right;}
+
+.clear {
+    position: fixed;
+    left: 5px;
+    bottom: 75px;
+    padding: 7px 7px;
+    font-size: larger;
+    font-weight: bold;  
+    color: wheat;
+    background: #35442d;
+    border-radius:9px;
+    border: 2px solid #595959;
+}
+
+.foot {
+    display: none;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    border-radius: 22px;
+    margin: 15px auto;
+    background:none;
+    border: 1px solid #ddd
+}
+
+.foot div {
+    display: table-cell;
+    width: 100%
+}
+
+.ta {
+    font-size: 18px;
+    padding: 1px 50px;
+    width: 100%;
+    margin: 0;
+    height: 45px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    direction: rtl;
+    background: #3e6457;
+    border-radius: 22px;
+    outline: none
+}
+.ta:hover{
+    background: #3e64576e;
+}
+#snd {
+    font-size: 18px;
+    height: 44px;
+    padding: 10px;
+    background: #37a846;
+    color: #fff;
+    border: 3px solid rgb(39, 87, 37);
+    border-radius: 22px
+}
