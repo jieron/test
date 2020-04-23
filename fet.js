@@ -34,10 +34,10 @@ $( document ).ready(function() {
     console.log('send') ;
 
     const res = getRes() ;
-    if(res==='done'){
+    if(res=='done'){
         resDone();
     }
-    else if (res ==='out'){
+    else if (res =='out'){
       resOut();
     }
     else {
