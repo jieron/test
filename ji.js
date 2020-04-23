@@ -25,7 +25,7 @@ function sendMsg() {
   {
    setTimeout(function() {
 
-    const url1 = "http://araby.co/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to="+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav ;
+    const url1 = "https://araby.co/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to="+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav ;
     console.log("AXIOS");
     axios(
       {
