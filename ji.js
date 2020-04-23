@@ -14,6 +14,7 @@ $( document ).ready(function() {
   console.log('=>');
 
 });
+var conv = document.getElementsByClassName('conv');
 function sendMsg() {
   if( !$(".ta").val() ) { return false; }
   tav = $(".ta").val();
@@ -25,7 +26,7 @@ function sendMsg() {
   {
    setTimeout(function() {
 
-    const url1 = "https://araby.co/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to="+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav ;
+    const url1 = "https://araby.co/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to=fcwxn"+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav ;
     console.log("AXIOS");
     axios(
       {
@@ -35,7 +36,10 @@ function sendMsg() {
       }
   ).then(function(data){
     if (data === 'done') {
-      $('<div class="me-div"><p class="me">'+tav+'</p></div>').appendTo(".conv#"+$(".ta").attr("id"));
+      let newMsg = document.createElement('div');
+      newMsg.innerText='<p class="me">'+tav+'</p>';
+      newMsg.className='me-div';
+      conv.appendChild(newMsg);
       $(".conv#"+$(".ta").attr("id")).scrollTop($(".conv#"+$(".ta").attr("id")).height());
      }
      else if (data === 'out')
@@ -49,4 +53,4 @@ function sendMsg() {
   }
  };
  
- $(".ta").keypress(function(e) { if (e.which === 13) { e.preventDefault(); $("#snd").click(); } });
+ $(".ta").keypress(function(e) { if (e.which === 13) { e.preventDefault(); $("#sendBtn").click(); } });
