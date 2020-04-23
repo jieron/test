@@ -20,7 +20,7 @@ $( document ).ready(function() {
   //---------- Send Message ----------//
   function getRes(){
     console.log('get res') ;
-    const url1 = "https://araby.co/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to=fcwxn"+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav ;
+    const url1 = "https://araby.co/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to="+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav ;
     fetch(url1).then(res =>
       {
         res.text().then(function (text) {
