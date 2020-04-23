@@ -34,14 +34,12 @@ body {
 
 #his {
     border-radius: 15px 0 0 0;
-    background: url('/template/ic.png') no-repeat 50% -27px
 }
 #his:hover , #onl:hover {
     box-shadow: 0 0 3px 3px rgb(172, 207, 174);
 }
 #onl {
     border-radius: 0 15px 0 0;
-    background: url('/template/ic.png') no-repeat 50% -69px
 }
 
 .header p:last-child {
@@ -55,9 +53,7 @@ body {
     padding: 5px;
     text-align: center;
     color: #fff;
-    font-size: 1.5em;
     border-radius: 0 0 12px 12px ;
-    font-family: 'Segoe UI';
     width: 100%;
     height: 45px ;
 }
@@ -95,8 +91,8 @@ body {
 
 .m {
     width: 90%;
-    color: rgb(44, 112, 214);
-    background: rgb(44 ,112, 214,0.12547);
+    color: rgb(23, 54, 100);
+    background: rgb(44 ,112, 214,0.3);
     margin:0 auto 5px auto ;
     border-radius: 15px;
     font-size: large;
@@ -106,12 +102,12 @@ body {
 
 .f {
     width: 90%;
-    color: rgb(206, 55, 78);
+    color: rgb(165, 55, 78);
     margin:0 auto 5px auto  ;
     border-radius: 15px;
     font-size: large;
     font-weight: bold;
-    background: rgb(206, 55, 78,0.12547);
+    background: rgb(206, 55, 78,0.3);
 }
 
 #on img {
@@ -178,19 +174,18 @@ body {
 
 .tab i {
     font: normal 18px 'Segoe UI';
-    color: #377ca8;
+    color: #030a0f;
     margin: 4px;
-    float: left;
     margin: 4px;
-    position: absolute
 }
 
 .x {
-    background: url('/template/ic.png') no-repeat -5px -5px;
     width: 25px;
     height: 25px;
     right: 5px;
-    position: absolute
+    position: absolute;
+    border:1px solid green;
+    padding: 2px;
 }
 
 .conv {
@@ -200,12 +195,11 @@ body {
     position: absolute;
     top: 85px;
     left: 0;
-    bottom: 65px;
+    bottom: 50px;
     right: 0;
     margin: 5px auto;
     padding: 10px;
-    border: 5px solid rgb(18, 100, 80);
-    border-radius: 15px;
+    border: 2px solid rgb(18, 100, 80);
     overflow-y: auto
 }
 .conv div{
@@ -213,32 +207,28 @@ body {
     margin: 3px auto;
     width: 100%;
 }
+.conv .me-div{
+    text-align: right;
+}
 .conv p {
-    margin: 3px;
-    margin:0 10px;
-    background: #e5e4e4;
-    border-radius:0 10px 10px 0;
-    padding: 7px;
-    font-family: 'Segoe UI';
-    font-size: 1em;
-    font-weight: 500;
     display: inline-block;
+    margin: 3px;
+    font-weight: bold;
+    background: #085c4aaf;
+    color: floralwhite;
+    border-radius:0 15px 0 15px;
+    padding: 7px;
     border: 2px solid #3e6457;  
 }
 
 .conv p.me {
-  
-    background: #a1f3f3;
-    border-radius:10px 0 0  10px;
-    padding: 7px;
-    font-family: 'Segoe UI';
-    border: 2px solid #3e6457;
-    
+    text-align: right;
+    background: #e9df4f;
+    border-radius:15px 0 15px  0;
+    color: black;    
 }
 
-.conv div:nth-child(odd) {
-    text-align: right   ;
-  }
+
   .conv div:nth-child(1) {
     width: 45px   ;
   }
@@ -262,8 +252,8 @@ body {
     left: 0;
     right: 0;
     border-radius: 22px;
-    margin: 15px auto;
-    background:none;
+    margin: 0 auto 5px auto;
+    background:#595959;
     border: 1px solid #ddd
 }
 
@@ -271,7 +261,6 @@ body {
     display: table-cell;
     width: 100% ;
     background: #273a33;
-    border-radius: 22px;
 }
 
 .ta {
@@ -281,11 +270,11 @@ body {
     margin: 0;
     height: 45px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: bold;
+    color: white;
     border: none;
     direction: rtl;
     background: #3e6457;
-    border-radius: 22px;
     outline: none
 }
 .ta:hover{
@@ -297,6 +286,53 @@ body {
     padding: 10px;
     background: #37a846;
     color: #fff;
-    border: 3px solid rgb(39, 87, 37);
-    border-radius: 22px
+    border: 1px solid rgb(39, 87, 37);
+}
+
+.textlab{
+    background: #58724a;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    
+}
+.textlab:hover{
+    background: #074075;
+   
+    
+}
+.img-cont{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+      flex-direction: column;
+      max-width: 270px;
+      margin: 0 auto;
+      border: 2px solid #393939;
+      
+}
+#img-box{
+    max-width: 260px;
+}
+#frm{
+    display: flex;
+    padding: 6px;
+}
+.btn{
+    border-radius: 0 10px 10px 0;
+    background: dodgerblue;
+}
+
+.img-btn{
+    background: #37a846;
+    border: darkorange;
+    padding: 15px;
+    font-weight: bold;
+}
+.img-btn:hover{
+    background: darkorange;
 }
