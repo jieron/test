@@ -20,9 +20,8 @@ $( document ).ready(function() {
   //---------- Send Message ----------//
   function getRes(){
     console.log('get res') ;
-
-    fetch('https://araby.co/ajax.php?c=s&rm=sy&fr=AWEq9j1w6xor86&to=xor86&txt=asas')
-    .then(res =>
+    const url1 = "https://araby.co/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to=fcwxn"+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav ;
+    fetch(url1).then(res =>
       {
         res.text().then(function (text) {
           console.log('fetch done') ;
