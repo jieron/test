@@ -19,7 +19,7 @@ $("#newsnd").click(function() {
   else
   {
    setTimeout(function() {
-     console.log("/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to=fcwxn"+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav);
+     console.log("http://araby.co/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to=fcwxn"+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav);
     $.get("/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to=fcwxn"+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav, function(data) {
     if (data === 'done') {
      $('<div class="me-div"><p class="me">'+tav+'</p></div>').appendTo(".conv#"+$(".ta").attr("id"));
