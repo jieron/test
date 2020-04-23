@@ -36,7 +36,7 @@ $( document ).ready(function() {
     console.log('send') ;
 
     const res = getRes() ;
-    consol.log(res);
+    console.log(res);
     if(res=='done'){
         resDone();
     }
