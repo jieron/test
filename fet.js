@@ -1,3 +1,21 @@
+$( document ).ready(function() {
+    document.getElementById("snd").style.display='none';
+    console.log( "ready!" );
+    const btn = document.createElement('button');
+    btn.id='sendBtn';
+    btn.innerText='=>';
+    btn.className ='img-btn';
+    btn.onclick=function show(){
+      sendMsg();
+      console.log(":::::");
+    }
+    const x =document.getElementsByClassName('foot')[0];
+    x.appendChild(btn);
+    console.log('=>');
+  
+  });
+  $(".ta").keypress(function(e) { if (e.which === 13) { e.preventDefault(); $("sendBtn").click(); } });
+  
 
   //---------- Send Message ----------//
   function getRes(){
@@ -38,7 +56,7 @@
     alert("المستخدم غادر الغرفة");
 
   }
- $("#snd").click(function() {
+function sendMsg() {
     console.log("NEW METHOD");
   if( !$(".ta").val() ) { return false; }
   tav = $(".ta").val();
@@ -49,7 +67,7 @@
   {
     setTimeout(send,1000);
   }
- });
+ }
  
  $(".ta").keypress(function(e) { if (e.which === 13) { e.preventDefault(); $("#snd").click(); } });
   
