@@ -12,13 +12,10 @@ $( document ).ready(function() {
   const x =document.getElementsByClassName('foot')[0];
   x.appendChild(btn);
   console.log('=>');
-
 });
 $(".ta").keypress(function(e) { if (e.which === 13) { e.preventDefault(); $("sendBtn").click(); } });
-
 function sendMsg() {
   $('.ta').focus();
-
   if( !$(".ta").val() ) { return false; }
   tav = $(".ta").val();
   console.log(tav);
@@ -28,8 +25,6 @@ function sendMsg() {
   else
   {
    setTimeout(function() {
-    
-
     const url1 = "https://araby.co/ajax.php?c=s&rm="+$("#rm").val()+"&fr="+$("#myid").val()+"&to=fcwxn"+$(".ta").attr("id").replace(/.+q9j1w6/,"")+"&txt="+tav ;
     console.log("AXIOS");
     axios(
