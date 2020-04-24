@@ -1,12 +1,21 @@
+:root{
+    --bg-1:#011f4b ;
+    --bg-2:#03396c  ;
+    --ch1: #005b96 ;
+    --ch2: #ebf8b1 ;
+    --inp: #094974 ;
+    --fg-1: #6497b1 ;
+    --fg-2: #b3cde0 ;
+}
+
 *{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
 }
 body {
-    background: #fff;
+    background: var(--bg-1);
     margin:5px;
 }
-
 .wrapper {
     position: absolute;
     top: 2px;
@@ -15,54 +24,50 @@ body {
     bottom: 2px ;
     background: url('https://i.pinimg.com/236x/8f/ba/cb/8fbacbd464e996966eb9d4a6b7a9c21e--sultan.jpg');
 }
-
 .top {
-    background: #3e6457;
+    background:var(--bg-1);
     display: table;
     width: 100%;
     text-align: center;
     height: 40px;
-    border-radius: 15px 15px 0 0;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
-
 .top p {
     display: table-cell;
     cursor: pointer;
-    border: 0px solid #eee
+  
 }
-
 #his {
-    border-radius: 15px 0 0 0;
+    border: 1px solid crimson;
 }
 #his:hover , #onl:hover {
-    box-shadow: 0 0 3px 3px rgb(172, 207, 174);
+    box-shadow: 0 0 3px 2px rgb(255, 0, 0);
 }
 #onl {
-    border-radius: 0 15px 0 0;
+    border: 1px solid crimson;
 }
-
 .header p:last-child {
     border: none
 }
-
+.outer{
+    height: 40px;
+    width: 100%; 
+}
 .h1 {
     display: table;
-    background: rgba(18, 170, 99, 0.664);
+    background: var(--bg-2);
     margin: 0px auto;
-    padding: 5px;
+    padding: 0px;
     text-align: center;
     color: #fff;
-    border-radius: 0 0 12px 12px ;
     width: 100%;
-    height: 45px ;
+    height: 40px ;
+    border: 1px solid crimson;
 }
-
 .h1 span {
     display: table-cell;
     vertical-align: middle
 }
-
 .out {
     display: none;
     position: absolute;
@@ -71,7 +76,6 @@ body {
     bottom: 0;
     right: 0
 }
-
 #on {
     position: absolute;
     top: 100px;
@@ -80,7 +84,6 @@ body {
     right: 0;
     overflow-y: auto
 }
-
 #on p {
     border-bottom: 1px solid rgb(155, 236, 182);
     font-family: Tahoma;
@@ -88,7 +91,6 @@ body {
     cursor: pointer;
     height: 34px
 }
-
 .m {
     width: 90%;
     color: rgb(23, 54, 100);
@@ -97,9 +99,7 @@ body {
     border-radius: 15px;
     font-size: large;
     font-weight: bold;
-
 }
-
 .f {
     width: 90%;
     color: rgb(165, 55, 78);
@@ -109,13 +109,11 @@ body {
     font-weight: bold;
     background: rgb(206, 55, 78,0.3);
 }
-
 #on img {
     position: absolute;
     left: 5px;
     margin-top: 5px
 }
-
 #on p b {
     position: absolute;
     right: 54px;
@@ -123,7 +121,6 @@ body {
     font-weight: normal;
     top: 5px
 }
-
 #on p span {
     position: absolute;
     right: 3px;
@@ -135,7 +132,6 @@ body {
     text-align: center;
     top: 4px
 }
-
 #on p i {
     position: absolute;
     right: 28px;
@@ -144,7 +140,6 @@ body {
     margin: 0 3px;
     top: 2px
 }
-
 #on u {
     position: absolute;
     bottom: 2px;
@@ -189,17 +184,15 @@ body {
 }
 
 .conv {
-    background: url('https://qph.fs.quoracdn.net/main-qimg-8b585fb4a5c9fedbb899cfb0cf0331a7');
-    background-repeat: no-repeat;
-    background-size: cover;
+   /* background: url('https://qph.fs.quoracdn.net/main-qimg-8b585fb4a5c9fedbb899cfb0cf0331a7');*/
+   background: var(--bg-1);
     position: absolute;
-    top: 85px;
+    top: 80px;
     left: 0;
-    bottom: 50px;
+    bottom: 26px;
     right: 0;
-    margin: 5px auto;
+    margin: 0px auto;
     padding: 10px;
-    border: 2px solid rgb(18, 100, 80);
     overflow-y: auto
 }
 .conv div{
@@ -214,7 +207,7 @@ body {
     display: inline-block;
     margin: 3px;
     font-weight: bold;
-    background: #085c4aaf;
+    background: var(--ch1);
     color: floralwhite;
     border-radius:0 15px 0 15px;
     padding: 7px;
@@ -223,44 +216,45 @@ body {
 
 .conv p.me {
     text-align: right;
-    background: #e9df4f;
+    background: var(--ch2);
     border-radius:15px 0 15px  0;
     color: black;    
 }
 
 
   .conv div:nth-child(1) {
-    width: 45px   ;
+    width: 44px  ;
   }
 .clear {
     position: fixed;
-    left: 5px;
-    bottom: 75px;
+    height: 40px;
+    left: 2px;
+    top: 80px;
     padding: 7px 7px;
-    font-size: larger;
     font-weight: bold;  
-    color: wheat;
-    background: #35442d;
-    border-radius:9px;
-    border: 2px solid #595959;
+    color: var(--ch2);
+   
+    border: 1px solid crimson;
+    border-radius : 0 0 22px 22px ;
+    text-align: center;
 }
+.clear:hover{
+    border: 3px solid var(--ch2);
 
+}
 .foot {
     display: none;
     position: absolute;
-    bottom: 2px;
+    bottom: 0px;
+    height: 26px;    
     left: 0;
-    right: 0;
-    border-radius: 22px;
-    margin: 0 auto 5px auto;
-    background:#595959;
-    border: 1px solid #ddd
+    background:var(--bg-2);
 }
 
 .foot div {
     display: table-cell;
     width: 100% ;
-    background: #273a33;
+    background: var(--bg-2);
 }
 
 .ta {
@@ -268,29 +262,21 @@ body {
     padding: 1px 50px;
     width: 100%;
     margin: 0;
-    height: 45px;
-    font-size: 1rem;
+    height: 26px;
     font-weight: bold;
-    color: white;
+    color: var(--ch2);
     border: none;
     direction: rtl;
-    background: #3e6457;
+    background:var(--bg-2);
     outline: none
 }
 .ta:hover{
-    background: #3e64576e;
-}
-#newsnd {
-    font-size: 18px;
-    height: 44px;
-    padding: 10px;
-    background: #37a846;
-    color: #fff;
-    border: 1px solid rgb(39, 87, 37);
+    background: var(--ch1);
 }
 
+
 .textlab{
-    background: #58724a;
+    background:var(--bg-2) ;
     width: 100%;
     padding: 10px;
     border-radius: 10px 0 0 10px;
@@ -328,11 +314,16 @@ body {
 }
 
 .img-btn{
-    background: #37a846;
-    border: darkorange;
+    background-image: url('https://static.thenounproject.com/png/984576-200.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+    font-weight: bold;
+    
+    border: 2px solid darkorange;
     padding: 15px;
     font-weight: bold;
 }
 .img-btn:hover{
-    background: darkorange;
+    border: 2px solid var(--inp);
 }
