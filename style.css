@@ -1,9 +1,18 @@
 :root{
-    --bg-1:#011f4b ;
-    --bg-2:#03396c  ;
+    /*
+    --fg-1:#011f4b ;
+    --fg-2:#03396c  ;
     --ch1: #005b96 ;
     --ch2: #ebf8b1 ;
     --inp: #094974 ;
+    --bg-1: #6497b1 ;
+    --bg-2: #b3cde0 ;
+    */
+    --bg-1:#373737 ;
+    --bg-2:#595959  ;
+    --ch1: #3e5d6d ;
+    --ch2: #6497b1 ;
+    --inp: #262626 ;
     --fg-1: #6497b1 ;
     --fg-2: #b3cde0 ;
 }
@@ -17,12 +26,13 @@ body {
     margin:5px;
 }
 .wrapper {
+
     position: absolute;
     top: 2px;
     left: 2px;
     right: 2px;
     bottom: 2px ;
-    background: url('https://i.pinimg.com/236x/8f/ba/cb/8fbacbd464e996966eb9d4a6b7a9c21e--sultan.jpg');
+    background: var(--bg-1);
 }
 .top {
     background:var(--bg-1);
@@ -38,13 +48,12 @@ body {
   
 }
 #his {
-    border: 1px solid crimson;
+    border-right: 10px solid var(--fg-1);
 }
 #his:hover , #onl:hover {
-    box-shadow: 0 0 3px 2px rgb(255, 0, 0);
 }
 #onl {
-    border: 1px solid crimson;
+    border-left: 10px solid var(--fg-1);
 }
 .header p:last-child {
     border: none
@@ -62,7 +71,9 @@ body {
     color: #fff;
     width: 100%;
     height: 40px ;
-    border: 1px solid crimson;
+    border-top: 2px solid var(--fg-1);
+
+    border-bottom: 2px solid var(--fg-1);
 }
 .h1 span {
     display: table-cell;
@@ -85,29 +96,32 @@ body {
     overflow-y: auto
 }
 #on p {
-    border-bottom: 1px solid rgb(155, 236, 182);
     font-family: Tahoma;
     position: relative;
     cursor: pointer;
     height: 34px
 }
 .m {
+    border-right: 6px solid var(--fg-2);
+    border-left: 6px solid var(--fg-2);
+
     width: 90%;
-    color: rgb(23, 54, 100);
-    background: rgb(44 ,112, 214,0.3);
-    margin:0 auto 5px auto ;
-    border-radius: 15px;
+    color: white;
+    background:var(--inp);
+    margin:0 auto 2px auto ;
     font-size: large;
     font-weight: bold;
 }
 .f {
+    border-right: 6px solid crimson;
+    border-left: 6px solid crimson;
+
     width: 90%;
-    color: rgb(165, 55, 78);
-    margin:0 auto 5px auto  ;
-    border-radius: 15px;
+    color: white;
+    margin:0 auto 2px auto  ;
     font-size: large;
     font-weight: bold;
-    background: rgb(206, 55, 78,0.3);
+    background: var(--bg-2);
 }
 #on img {
     position: absolute;
@@ -159,11 +173,10 @@ body {
 .tab {
     margin: 1px;
     border-bottom: 1px solid #494949;
-    background: rgb(103, 158, 90);
-    position: relative;
+    background: var(--fg-1) ;
+    
     font-weight: bold;
     padding: 5px;
-    border-radius: 10px;
     padding-left: 25px;
 }
 
@@ -173,13 +186,11 @@ body {
     margin: 4px;
     margin: 4px;
 }
-
 .x {
     width: 25px;
     height: 25px;
     right: 5px;
     position: absolute;
-    border:1px solid green;
     padding: 2px;
 }
 
@@ -232,9 +243,9 @@ body {
     top: 80px;
     padding: 7px 7px;
     font-weight: bold;  
-    color: var(--ch2);
-   
-    border: 1px solid crimson;
+    color: var(--fg-2);
+    background: rgba(220, 20, 60, 0.308);
+    border: 2px solid var(--fg-1);
     border-radius : 0 0 22px 22px ;
     text-align: center;
 }
@@ -321,9 +332,22 @@ body {
     font-weight: bold;
     
     border: 2px solid darkorange;
-    padding: 15px;
+    padding: 12px;
     font-weight: bold;
 }
 .img-btn:hover{
     border: 2px solid var(--inp);
+}
+#snd{
+   
+        background-image: url('https://static.thenounproject.com/png/984576-200.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 25px;
+        font-weight: bold;
+        
+        border: 2px solid darkorange;
+        padding: 12px;
+        font-weight: bold;
+    
 }
