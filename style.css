@@ -85,9 +85,8 @@ body {
     top:90px;
     left: 0;
     bottom: 0;
-    right: 0;
+    right: 0 ;
     background: var(--bg-2);
-
 }
 #on {
     position: absolute;
@@ -95,7 +94,7 @@ body {
     left: 0;
     bottom: 2px;
     right: 0;
-    overflow-y: auto;
+    overflow-y: auto ;
     background: var(--bg-2);
 }
 #on p {
@@ -236,15 +235,13 @@ body {
 }
 
 
-  .conv div:nth-child(1) {
-    width: 44px  ;
-  }
+ 
 .clear {
+    
     position: fixed;
     height: 40px;
-    left: 2px;
     top: 80px;
-    padding: 7px 7px;
+    right: 19px;
     font-weight: bold;  
     color: var(--fg-2);
     background: rgba(220, 20, 60, 0.308);
@@ -252,6 +249,23 @@ body {
     border-radius : 0 0 22px 22px ;
     text-align: center;
 }
+.ddd{
+    width: 44px  ;
+    position: absolute;
+    height: 40px;
+    top: 0px;
+    left: 2px;
+    font-weight: bold;  
+    color: var(--fg-2);
+    background: rgba(220, 20, 60, 0.308);
+    border: 2px solid var(--fg-1);
+    border-radius : 0 0 22px 22px ;
+    text-align: center;
+}
+.conv div:nth-child(1) {
+    width: 44px  ;
+
+  }
 .clear:hover{
     border: 3px solid var(--ch2);
 
@@ -326,8 +340,20 @@ body {
     border-radius: 0 10px 10px 0;
     background: dodgerblue;
 }
-
 .img-btn{
+    width: 44px  ;
+    position: fixed;
+    height: 40px;
+    top:84px;
+    left: 17px;
+    font-weight: bold;  
+    color: var(--fg-2);
+    background: rgba(220, 20, 60, 0.308);
+    border: 2px solid var(--fg-1);
+    border-radius : 0 0 22px 22px ;
+    text-align: center;
+}
+.snd-btn{
     background-image: url('https://static.thenounproject.com/png/984576-200.png');
     background-repeat: no-repeat;
     background-size: contain;
