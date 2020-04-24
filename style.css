@@ -85,7 +85,9 @@ body {
     top:90px;
     left: 0;
     bottom: 0;
-    right: 0
+    right: 0;
+    background: var(--bg-2);
+
 }
 #on {
     position: absolute;
